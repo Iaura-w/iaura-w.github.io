@@ -34,37 +34,58 @@
         <div class="project-list">
             <div class="project">
                 <h3>GitHub Repositories</h3>
-                <p>A Java application that retrieves information about a user's non-forked GitHub repositories and
-                    their branches.</p>
-                <p>Technologies: Java, Spring Boot, MongoDB, JUnit, Mockito, MockWebServer, Docker Compose</p>
+                <p>A Java application designed to retrieve and display information about a user's GitHub repositories,
+                    specifically non-fork repositories and their branches. It connects to the GitHub API to gather
+                    repository data such as the repository name, owner's login, and branch details (branch name and last
+                    commit SHA). The application temporarily stores this information in a MongoDB database for 1 hour to
+                    minimize redundant API calls and improve performance.</p>
+                <p>Technologies: Java, Spring Boot, MongoDB, JUnit, Mockito, MockWebServer, Docker Compose, REST API</p>
                 <a href="https://github.com/Iaura-w/GitHubRepositories" target="_blank" class="btn">See on GitHub</a>
             </div>
             <div class="project">
-                <h3>The Library Management Application</h3>
-                <p>An application for managing a library, including the storage of book and customer information, and
-                    the management of book borrowing and returning.</p>
-                <p>Technologies: Java, Spring Boot, MongoDB, Gradle, Docker Compose</p>
+                <h3>Library Management Application</h3>
+                <p>A Java application to manage a library’s inventory and customer data, allowing for the borrowing and
+                    returning of books. The application stores information about books and customers, along with each
+                    customer’s loan history, including dates for borrowed and returned books. I used Java with the
+                    Spring Boot framework to create RESTful services, and MongoDB as the database to store the
+                    information.</p>
+                <p>Technologies: Java, Spring Boot, MongoDB, JUnit, Docker Compose</p>
                 <a href="https://github.com/Iaura-w/LibraryManagement" target="_blank" class="btn">See on GitHub</a>
             </div>
             <div class="project">
                 <h3>Android Application for Identifying Instruments</h3>
-                <p>An Android app that identifies musical instruments based on recorded sounds, using a
-                    server-side machine learning algorithm.</p>
+                <p>An Android application designed to identify musical instruments based on
+                    recorded sounds. Users can send audio through the app to a server,
+                    where a machine learning algorithm processes the sound and returns the instrument's name. The app is
+                    built in Kotlin, while the server, implemented in Python, handles audio analysis using machine
+                    learning model. The application was part of my master's thesis and provides users with a simple,
+                    intuitive interface for uploading and analyzing sound files.</p>
                 <p>Technologies: Kotlin, Python (server-side)</p>
                 <a href="https://github.com/Iaura-w/InstrumentFinder" target="_blank" class="btn">See on GitHub</a>
             </div>
             <div class="project">
                 <h3>Social Network Application</h3>
-                <p>A social network application with features like posts, comments, friends, and likes.</p>
-                <p>Technologies: Java, Spring Boot, MySQL</p>
+                <p>The Social Network Application is a web platform designed to enable users to create posts and
+                    interact with others through likes. Users can register, log in, and post updates. While initially
+                    planned to include features like comments and friends lists, the core functionalities focused on
+                    creating and liking posts.
+                    The backend is built using Java and Spring Boot for RESTful API services. Spring Security ensures
+                    user authentication and authorization, and MySQL is used for data storage, including user profiles
+                    and posts. Swagger was used for API documentation. Project development was managed using Git for
+                    version control and Jira for task organization and team collaboration.</p>
+                <p>Technologies: Java, Spring Boot, Spring Security, REST API, MySQL, Swagger</p>
                 <a href="https://github.com/SpringSummerSN/Social-Network" target="_blank" class="btn">See on
                     GitHub</a>
             </div>
             <div class="project">
-                <h3>Web Application for Managing a Bookstore</h3>
-                <p>A Java-based web application for managing an online bookstore with integration of the PayU
-                    payment system.</p>
-                <p>Technologies: Java, Spring Boot, Spring Security, MySQL</p>
+                <h3>Bookstore Enterprise – Web Application for Managing a Bookstore</h3>
+                <p>A web application built for managing an online bookstore, allowing users to
+                    browse, purchase books, and make secure payments. The application integrates with the PayU payment
+                    system to handle online transactions. It includes features such as user authentication, book
+                    inventory management, order processing, and a shopping cart. Administrators can manage book
+                    listings, view sales reports, and update inventory. The application has a frontend built using JSP
+                    files for dynamic web pages and a user-friendly interface.</p>
+                <p>Technologies: Java, Spring Boot, Spring Security, Hibernate, MySQL</p>
                 <a href="https://github.com/Iaura-w/BookStoreEnterprise" target="_blank" class="btn">See on GitHub</a>
             </div>
         </div>
