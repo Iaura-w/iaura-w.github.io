@@ -1,132 +1,223 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE HTML>
+<html>
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio - Laura Wołoszun</title>
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>Laura Wołoszun - Portfolio</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <noscript>
+        <link rel="stylesheet" href="assets/css/noscript.css" />
+    </noscript>
 </head>
 
-<body>
-    <header>
-        <nav>
-            <div class="container">
+<body class="is-preload">
+
+    <!-- Sidebar -->
+    <section id="sidebar">
+        <div class="inner">
+            <nav>
                 <ul>
+                    <li><a href="#intro">Welcome</a></li>
                     <li><a href="#projects">Projects</a></li>
-                    <li><a href="#about">About me</a></li>
+                    <li><a href="#about">About Me</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
-            </div>
-        </nav>
-        <div class="hero">
-            <div class="container">
-                <h2>Laura Wołoszun</h2>
+            </nav>
+        </div>
+    </section>
+
+    <!-- Wrapper -->
+    <div id="wrapper">
+
+        <!-- Intro -->
+        <section id="intro" class="wrapper style1 fullscreen fade-up">
+            <div class="inner">
+                <h1>Laura Wołoszun</h1>
                 <p>I'm Laura, a developer specializing in Java and passionate about backend development.</p>
-                <a href="#contact" class="btn">Contact me</a>
-                <a href="cv/cv_Laura_Woloszun.pdf" class="btn">Get my CV</a>
+                <ul class="actions">
+                    <li><a href="#projects" class="button scrolly">See My Projects</a></li>
+                    <li><a href="cv/cv_Laura_Woloszun.pdf" class="button scrolly">Download CV</a></li>
+                </ul>
             </div>
-        </div>
-    </header>
+        </section>
 
-    <section id="projects" class="container">
-        <h2>Projects</h2>
-        <div class="project-list">
-            <div class="project">
-                <h3>GitHub Repositories</h3>
-                <p>A Java application designed to retrieve and display information about a user's GitHub repositories,
-                    specifically non-fork repositories and their branches. It connects to the GitHub API to gather
-                    repository data such as the repository name, owner's login, and branch details (branch name and last
-                    commit SHA). The application temporarily stores this information in a MongoDB database for 1 hour to
-                    minimize redundant API calls and improve performance.</p>
-                <p>Technologies: Java, Spring Boot, MongoDB, JUnit, Mockito, MockWebServer, Docker Compose, REST API</p>
-                <a href="https://github.com/Iaura-w/GitHubRepositories" target="_blank" class="btn">See on GitHub</a>
-            </div>
-            <div class="project">
-                <h3>Library Management Application</h3>
-                <p>A Java application to manage a library’s inventory and customer data, allowing for the borrowing and
-                    returning of books. The application stores information about books and customers, along with each
-                    customer’s loan history, including dates for borrowed and returned books. I used Java with the
-                    Spring Boot framework to create RESTful services, and MongoDB as the database to store the
-                    information.</p>
-                <p>Technologies: Java, Spring Boot, MongoDB, JUnit, Docker Compose</p>
-                <a href="https://github.com/Iaura-w/LibraryManagement" target="_blank" class="btn">See on GitHub</a>
-            </div>
-            <div class="project">
-                <h3>Android Application for Identifying Instruments</h3>
-                <p>An Android application designed to identify musical instruments based on
-                    recorded sounds. Users can send audio through the app to a server,
-                    where a machine learning algorithm processes the sound and returns the instrument's name. The app is
-                    built in Kotlin, while the server, implemented in Python, handles audio analysis using machine
-                    learning model. The application was part of my master's thesis and provides users with a simple,
-                    intuitive interface for uploading and analyzing sound files.</p>
-                <p>Technologies: Kotlin, Python (server-side)</p>
-                <a href="https://github.com/Iaura-w/InstrumentFinder" target="_blank" class="btn">See on GitHub</a>
-            </div>
-            <div class="project">
-                <h3>Social Network Application</h3>
-                <p>The Social Network Application is a web platform designed to enable users to create posts and
-                    interact with others through likes. Users can register, log in, and post updates. While initially
-                    planned to include features like comments and friends lists, the core functionalities focused on
-                    creating and liking posts.
-                    The backend is built using Java and Spring Boot for RESTful API services. Spring Security ensures
-                    user authentication and authorization, and MySQL is used for data storage, including user profiles
-                    and posts. Swagger was used for API documentation. Project development was managed using Git for
-                    version control and Jira for task organization and team collaboration.</p>
-                <p>Technologies: Java, Spring Boot, Spring Security, REST API, MySQL, Swagger</p>
-                <a href="https://github.com/SpringSummerSN/Social-Network" target="_blank" class="btn">See on
-                    GitHub</a>
-            </div>
-            <div class="project">
-                <h3>Bookstore Enterprise – Web Application for Managing a Bookstore</h3>
-                <p>A web application built for managing an online bookstore, allowing users to
-                    browse, purchase books, and make secure payments. The application integrates with the PayU payment
-                    system to handle online transactions. It includes features such as user authentication, book
-                    inventory management, order processing, and a shopping cart. Administrators can manage book
-                    listings, view sales reports, and update inventory. The application has a frontend built using JSP
-                    files for dynamic web pages and a user-friendly interface.</p>
-                <p>Technologies: Java, Spring Boot, Spring Security, Hibernate, MySQL</p>
-                <a href="https://github.com/Iaura-w/BookStoreEnterprise" target="_blank" class="btn">See on GitHub</a>
-            </div>
-        </div>
-    </section>
+        <!-- Projects -->
+        <section id="projects" class="wrapper style2 spotlights">
+            <section>
+                <a href="https://github.com/Iaura-w/GitHubRepositories" target="_blank" class="image"><img
+                        src="images/pic01.jpg" alt="GitHub Repositories" /></a>
+                <div class="content">
+                    <div class="inner">
+                        <h2>GitHub Repositories</h2>
+                        <p>A Java application designed to retrieve and display information about a user's GitHub
+                            repositories, specifically non-fork repositories and their branches. It connects to the
+                            GitHub API to gather repository data such as the repository name, owner's login, and branch
+                            details (branch name and last commit SHA). The application temporarily stores this
+                            information in a MongoDB database for 1 hour to minimize redundant API calls and improve
+                            performance.</p>
+                        <p>Technologies: Java, Spring Boot, MongoDB, JUnit, Mockito, MockWebServer, Docker Compose, REST
+                            API</p>
+                        <ul class="actions">
+                            <li><a href="https://github.com/Iaura-w/GitHubRepositories" target="_blank"
+                                    class="button">See on GitHub</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <a href="https://github.com/Iaura-w/LibraryManagement" target="_blank" class="image"><img
+                        src="images/pic02.jpg" alt="Library Management Application" /></a>
+                <div class="content">
+                    <div class="inner">
+                        <h2>Library Management Application</h2>
+                        <p>A Java application to manage a library’s inventory and customer data, allowing for the
+                            borrowing and returning of books. The application stores information about books and
+                            customers, along with each customer’s loan history, including dates for borrowed and
+                            returned books. I used Java with the Spring Boot framework to create RESTful services, and
+                            MongoDB as the database to store the information.</p>
+                        <p>Technologies: Java, Spring Boot, MongoDB, JUnit, Docker Compose</p>
+                        <ul class="actions">
+                            <li><a href="https://github.com/Iaura-w/LibraryManagement" target="_blank"
+                                    class="button">See on GitHub</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <a href="https://github.com/Iaura-w/InstrumentFinder" target="_blank" class="image"><img
+                        src="images/pic03.jpg" alt="Android Application for Identifying Instruments" /></a>
+                <div class="content">
+                    <div class="inner">
+                        <h2>Android Application for Identifying Instruments</h2>
+                        <p>An Android application designed to identify musical instruments based on recorded sounds.
+                            Users can send audio through the app to a server, where a machine learning algorithm
+                            processes the sound and returns the instrument's name. The app is built in Kotlin, while the
+                            server, implemented in Python, handles audio analysis using a machine learning model. The
+                            application was part of my master's thesis and provides users with a simple, intuitive
+                            interface for uploading and analyzing sound files.</p>
+                        <p>Technologies: Kotlin, Python (server-side)</p>
+                        <ul class="actions">
+                            <li><a href="https://github.com/Iaura-w/InstrumentFinder" target="_blank" class="button">See
+                                    on GitHub</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <a href="https://github.com/SpringSummerSN/Social-Network" target="_blank" class="image"><img
+                        src="images/pic04.jpg" alt="Social Network Application" /></a>
+                <div class="content">
+                    <div class="inner">
+                        <h2>Social Network Application</h2>
+                        <p>The Social Network Application is a web platform designed to enable users to create posts and
+                            interact with others through likes. Users can register, log in, and post updates. While
+                            initially planned to include features like comments and friends lists, the core
+                            functionalities
+                            focused on creating and liking posts.
+                            The backend is built using Java and Spring Boot for RESTful API services. Spring Security
+                            ensures user authentication and authorization, and MySQL is used for data storage, including
+                            user
+                            profiles and posts. Swagger was used for API documentation. Project development was managed
+                            using Git
+                            for version control and Jira for task organization and team collaboration.</p>
+                        <p>Technologies: Java, Spring Boot, Spring Security, REST API, MySQL, Swagger</p>
+                        <ul class="actions">
+                            <li><a href="https://github.com/SpringSummerSN/Social-Network" target="_blank"
+                                    class="button">See on
+                                    GitHub</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <a href="https://github.com/Iaura-w/BookStoreEnterprise" target="_blank" class="image"><img
+                        src="images/pic05.jpg" alt="Bookstore Enterprise" /></a>
+                <div class="content">
+                    <div class="inner">
+                        <h2>Bookstore Enterprise – Web Application for Managing a Bookstore</h2>
+                        <p>A web application built for managing an online bookstore, allowing users to browse, purchase
+                            books, and make secure payments. The application integrates with the PayU payment system to
+                            handle online transactions. It includes features such as user authentication, book inventory
+                            management, order processing, and a shopping cart. Administrators can manage book listings,
+                            view sales reports, and update inventory. The application has a frontend built using JSP
+                            files for dynamic web pages and a user-friendly interface.</p>
+                        <p>Technologies: Java, Spring Boot, Spring Security, Hibernate, MySQL</p>
+                        <ul class="actions">
+                            <li><a href="https://github.com/Iaura-w/BookStoreEnterprise" target="_blank"
+                                    class="button">See on
+                                    GitHub</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+        </section>
 
-    <section id="about" class="container">
-        <h2>About me</h2>
-        <p>I’m a software developer with a strong foundation in computer science and practical experience in
-            building web applications. I specialize in Java and Spring, and have worked on several projects. I have
-            experience with technologies such as MongoDB, Docker, and JUnit, and am passionate about exploring new
-            tools and frameworks. Beyond programming, I enjoy playing games, reading books, and watching series,
-            with a particular interest in science fiction and fantasy genres. I also lead an active lifestyle,
-            exercise regularly at the gym, and focus on healthy living. I’m committed to continuous learning through
-            tutorials and technical resources to keep pace with the latest advancements in technology and
-            programming.</p>
+        <!-- about -->
+        <section id="about" class="wrapper style3 fade-up">
+            <div class="inner">
+                <h2>About Me</h2>
+                <p>I’m a software developer with a strong foundation in computer science and practical experience in
+                    building web applications. I specialize in Java and Spring, and have worked on several projects. I
+                    have experience with technologies such as MongoDB, Docker, and JUnit, and am passionate about
+                    exploring new tools and frameworks. Beyond programming, I enjoy playing games, reading books, and
+                    watching series, with a particular interest in science fiction and fantasy genres. I also lead an
+                    active lifestyle, exercise regularly at the gym, and focus on healthy living. I’m committed to
+                    continuous learning through tutorials and technical resources to keep pace with the latest
+                    advancements in technology and programming.</p>
+            </div>
+        </section>
 
-    </section>
+        <!-- contact -->
+        <section id="contact" class="wrapper style1 fade-up">
+            <div class="inner">
+                <h2>Contact</h2>
+                <div class="split style1">
+                    <section>
+                        <ul class="contact">
+                            <ul class="icons">
+                                <li><a href="mailto:laura.woloszun.b@gmail.com" class="fas fa-envelope"><span
+                                            class="label">Email</span></a>
+                                </li>
+                                <li><a href="https://github.com/iaura-w" class="icon brands fa-github"><span
+                                            class="label">GitHub</span></a>
+                                </li>
+                                <li><a href="https://www.linkedin.com/in/laura-woloszun"
+                                        class="icon brands fa-linkedin-in"><span class="label">LinkedIn</span></a>
+                                </li>
+                            </ul>
+                            </li>
+                        </ul>
 
-    <section id="contact" class="container">
-        <h2>Contact Me</h2>
-        <div class="contact-icons">
-            <a href="mailto:laura.woloszun.b@gmail.com" class="contact-icon">
-                <i class="fas fa-envelope"></i>
-            </a>
-            <a href="https://github.com/iaura-w" target="_blank" class="contact-icon">
-                <i class="fab fa-github"></i>
-            </a>
-            <a href="https://www.linkedin.com/in/laura-woloszun" target="_blank" class="contact-icon">
-                <i class="fab fa-linkedin"></i>
-            </a>
-        </div>
-    </section>
+                    </section>
+                </div>
+            </div>
+        </section>
 
-    <footer>
-        <div class="container">
-            <p>© 2024 Laura Wołoszun</p>
+    </div>
+
+    <!-- Footer -->
+    <footer id="footer" class="wrapper style1-alt">
+        <div class="inner">
+            <ul class="menu">
+                <li>&copy; 2024 Laura Wołoszun. All rights reserved.</li>
+                <li>Design: HTML5 UP</li>
+            </ul>
         </div>
     </footer>
 
-    <script src="js/main.js"></script>
+    <!-- Scripts -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/jquery.scrollex.min.js"></script>
+    <script src="assets/js/jquery.scrolly.min.js"></script>
+    <script src="assets/js/browser.min.js"></script>
+    <script src="assets/js/breakpoints.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/main.js"></script>
+
 </body>
 
 </html>
